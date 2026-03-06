@@ -1,0 +1,14 @@
+FAIL Patch 1a: OLD_INTERVAL not found
+  milestone line at: 313896
+FAIL Patch 1b: OLD_TOAST_CLOSE not found
+  sndMilestone at: 314321
+  context: "showToast(msg, 'var(--accent)');\n      if (typeof sndMilestone === 'function') sndMilestone();\n    }\n    _updateSessionCard();\n  } else {\n    const s = Math.floor((Date.now() - sessionStart) / 1000);\n"
+FAIL Patch 2
+  context: "ot');\n  if (pill) { pill.classList.add('session-active'); pill.title = 'Session in progress'; }\n  if (dot)  dot.classList.add('session-pulse');\n  // Old end button (kept as secondary control when scrolled deep)\n  const e"
+  Found end pill reset line: "  document.getElementById('session-time').textContent = '▶ START';"
+OK Patch 3
+OK Patch 4
+FAIL Patch 5: switchView log line not found
+FAIL Patch 6: DOMContentLoaded close not found
+
+Total patches: 2/6
